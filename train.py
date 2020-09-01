@@ -149,7 +149,7 @@ def collate_fn(items):
 def train():
     train_dl = DataLoader(FSLDataset('train', iteration=600), batch_size=B, num_workers=4, collate_fn=collate_fn)
     val_dl = DataLoader(FSLDataset('val', iteration=200), batch_size=B, num_workers=4, collate_fn=collate_fn)
-    test_dl = DataLoader(FSLDataset('train', iteration=200), batch_size=B, num_workers=4, collate_fn=collate_fn)
+    test_dl = DataLoader(FSLDataset('test', iteration=200), batch_size=B, num_workers=4, collate_fn=collate_fn)
 
     model = CNNModel(n_class=N).to(device)
     for epoch in range(100):
