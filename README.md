@@ -28,10 +28,7 @@ Q query = 15
 Implementation | Dev | Test
 --- | --- | ---
 Original paper |  | 63.11
-Our * | 52.05 | 74.89
-
-** The performance varies significantly depending on FSL setting and data sampling.
-
+Our * | | 
 
 
 ## Acknowledgement
